@@ -3,6 +3,17 @@
   src: url(./fonts/poppins.woff);
 }
 
+.pKanan {
+  opacity: 0;
+  transform: translate(0, 50px);
+  transition: 1s;
+}
+
+.pKanan.pmuncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 * {
 	font-family: poppins;
   font-size: 15px;
@@ -11,6 +22,24 @@
 .container {
   margin-top: 10px;
   width: 100%;
+}
+
+.container.kedua {
+  color: white;
+  opacity: 0;
+  background-color: white;
+  width: 100%;
+  transform: translate(-50px, 0);
+  transition: 1s;
+}
+
+.container.ketiga {
+  color: white;
+  opacity: 0;
+  background-color: #CDAC9D;
+  width: 100%;
+  transform: translate(0, 100px);
+  transition: 1s;
 }
 
 .container.hide {
@@ -31,7 +60,7 @@
   transition: 1s;
 }
 
-.container.hide.muncul, .container.kanan.muncul {
+.container.hide.muncul, .container.kanan.muncul, .container.kedua.muncul, .container.ketiga.muncul {
   opacity: 1;
   transform: translate(0,0);
 }
