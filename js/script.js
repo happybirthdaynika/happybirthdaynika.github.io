@@ -54,6 +54,7 @@ icon.onclick = function() {
   $('.container.hide').addClass('muncul')
   if (mySong.paused) {
     mySong.play()
+    icon.src = "img/giftopen.png"
   }
   setTimeout(type, 3000)
   type()
