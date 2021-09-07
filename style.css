@@ -91,6 +91,10 @@ span {
 }
 
 .cursor {
+  background-color:white;
+}
+
+.cursor.blink {
   display: inline-block;
   width: 2px;
   background-color: black;

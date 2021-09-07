@@ -31,6 +31,7 @@ let textArrayIndex = 0;
 
 function type() {
   if (charIndex < textArray[textArrayIndex].length) {
+    $('.cursor').addClass('blink')
     if (!cursor.classList.contains("typing")) cursor.classList.add("typing")
     myText.textContent += textArray[textArrayIndex].charAt(charIndex);
     charIndex++;
