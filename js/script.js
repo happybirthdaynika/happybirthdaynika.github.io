@@ -1,5 +1,5 @@
-var kedua = 0;
-var ketiga = 0;
+var kedua = 211;
+var ketiga = 268;
 let hScroll;
 let charIndex = 0;
 
@@ -11,25 +11,11 @@ $(window).on('load', function() {
 $(window).scroll(function() { 
   hScroll = $(this).scrollTop();
   console.log(hScroll);
-  console.log('charindex : ' + charIndex)
-  if ( $(window).height() <= 360 ){
-    var kedua = 207;
-    var ketiga = 268;
-    // var baru = 368;
-    // var baru2 = 390;
-    console.log('yang ini');
-  } else if ( $(window).height() > 361 && $(window).height() <= 1090 ){
-    var kedua = 310;
-    var ketiga = 613;
-    // var baru = 300;
-    // var baru2 = 350;
-    console.log('itu');
-  }
-  if (hScroll >= kedua && charIndex >= 224) {
+  if (hScroll >= kedua && charIndex >= 227) {
     console.log('jalan')
     $('.container.kedua').addClass('muncul')
   }
-  if (hScroll >= ketiga && charIndex >= 224) {
+  if (hScroll >= ketiga && charIndex >= 227) {
     console.log('jalan ketiga')
     $('.container.ketiga').addClass('muncul')
   }
@@ -38,7 +24,7 @@ $(window).scroll(function() {
 const myText = document.querySelector(".typed-text");
 const cursor = document.querySelector(".cursor");
 
-const textArray = ["Semoga dihari yang spesial ini, jadi hari yang spesial buat kamu, Selalu di beri umur yang panjang dari yang maha kuasa, Semoga di tahun ini, menjadi pribadi yang lebih baik dari sebelum nya.. Sehat terus yaa!!! ammiiin .... "];
+const textArray = ["Semoga dihari yang spesial ini, jadi hari yang spesial buat kamu Dan selalu di beri umur yang panjang dari yang maha kuasa. Sehat terus yaa!!! ammiiin .... semoga di tahun ini, menjadi pribadi yang lebih baik dari sebelum nya.."];
 const typingDelay = 150;
 const newTextDelay = 2000;
 let textArrayIndex = 0;
